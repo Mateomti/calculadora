@@ -22,7 +22,18 @@ $(document).ready(function(){
         var n1=$('#n1').val();
         var n2=$('#n2').val();
         var res=parseFloat(n1)/parseFloat(n2);
-        $('#res').val(res);
+        if (n2 == 0){
+            $('#res').val("No se puede dividir por 0.");
+        }
+        else{
+            $('#res').val(res);
+        }
     });
+    $('#borrar').click(function(){
+        $('#n1').val("");
+        $('#n2').val("");
+        $('#res').val("");
+    });
+
     
 });

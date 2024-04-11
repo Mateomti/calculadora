@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <title>Calculadora</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
     <script type="text/javascript" src="js/calculadora.js"></script>
-
-</head>
-<body>
-    <h1><Center>Calculadora</Center></h1>
+  </head>
+  <body>
+    <h1><center>Calculadora</center></h1>
     <form action="">
-        <table align="center" >
-            <tr>
-                <td>
-                    <label for="n1">Ingrese el primer numero: </label>
-                    <input type="number" name="n1" id="n1">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="n2">Ingrese el segundo numero: </label>
-                    <input type="number" name="n2" id="n2">
-                    <img src="/imagenes/borrar.jpg" width="50px">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="/imagenes/suma.jpg" width="100px" id="suma">
-                    <img src="/imagenes/resta.png" width="70px" id="resta">
-                    <img src="/imagenes/mul.jpg" width="70px" id="mul">
-                    <img src="/imagenes/div.jpg" width="100px" height="70px" id="div">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <center>
-                    <label for="res">Resultado</label>
-                    <input type="text" name="res" id="res" readonly>
-                    </center>
-                </td>
-            </tr>
-        </table>
+      <table align="center" border="5px">
+        <tr>
+          <td colspan="2">
+            <label for="n1">Ingrese el primer numero: </label>
+            <input type="number" name="n1" id="n1" placeholder="0" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="n2">Ingrese el segundo numero: </label>
+            <input type="number" name="n2" id="n2" placeholder="0" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <img src="/imagenes/suma-signo-mas.png" width="70px" id="suma" />
+            <img src="/imagenes/resta.png" width="70px" id="resta" />
+            <img
+              src="/imagenes/signo-de-multiplicacion.png"
+              width="70px"
+              id="mul"
+            />
+            <img src="/imagenes/division.png" width="70px" id="div" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <center>
+              <label for="res">Resultado</label>
+              <input type="text" name="res" id="res" readonly placeholder="0" />
+            </center>
+          </td>
+          <td>
+            <img src="/imagenes/borrar.png" width="70px" id="borrar" />
+          </td>
+        </tr>
+      </table>
     </form>
-</body>
+  </body>
 </html>
